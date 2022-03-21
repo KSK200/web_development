@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: opx;
+}
+.container{
+    max-width: 80%;
+    padding:30px;
+    margin: 25px;
+    margin: auto;
+}
+.container h2,p{
+    text-align: center;
+}
+.container h2{
+    font-size: 35px;
+    font-weight: bold;
+    color:black;
+    font-style: oblique;
+    text-decoration:dotted;
+}
+.container p{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+     ;
+}
+input ,textarea{
+    width: 80%;
+    font-size: 25px;
+    display: block;
+    outline: none;
+    padding:5px;
+    margin:12px auto;
+    border-radius: 7px; 
+}
+.btn{
+    font-size: 23px;
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bgimg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+     
+}

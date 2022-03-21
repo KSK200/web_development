@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDMCET</title>
+    
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <img class="bgimg" src="images/sdmcet.jpeg" alt="sdmcet Dharwad">
+    <div class="container">
+        <h2>WELCOME TO SDMCET</h2>
+        <br>
+        <p>Enter Your Details</p>
+        <br>
+
+        <form action="php/index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            <input type="text" name="usn" id="usn" placeholder="Enter your usn" required>
+            <input type="number" name="number" id="number" placeholder="Enter your phone number" required>
+            <input type="number" name="age" id="age" placeholder="Enter your age" required>
+            <input type="email" name="mail" id="mail" placeholder="Enter your E-mail" required>
+            <textarea name="address" id="address" cols="13" rows="5" placeholder="Enter your address details" required></textarea>
+           <button class="btn">submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>
