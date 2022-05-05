@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var age=document.myform.age.value;  
+        var email=document.myform.email.value;
+        var password=document.myform.password.value;
+
+        if (name==null || name=="" || age==null || age=="" || email==null || password==null || password=="" || email==""){  
+          alert("Field's can't be blank Fill it out");  
+          return false;  
+        }else if(age<6 || age>60){  
+          alert("Invalid age!!");  
+          return false;  
+          }
+          else{
+              alert("Successfull!"); 
+          }
+            
+        }    
+    </script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: dimgrey;
+        }
+        .c1{
+            width: 30%;
+            background-color: brown;
+            text-align:center;
+            margin: 20px;
+            margin:auto;
+            padding: 20px;
+            font-size: 20px;  
+        }
+        .c1 h2{
+            color:cyan;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        .c2 input{
+            background-color: gold;
+            font-size: 20px;
+            padding: 8px;
+        }
+        .c1 input{
+            padding: 8px;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="c1">
+        
+        <h2>Fill This Form</h2>
+        <br>
+        <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >  
+            
+            <input type="text" name="name" placeholder="Enter your Name"><br/>  
+            <br>
+            
+            <input type="number" name="age" placeholder="Enter your Age"><br/>             
+            <br> 
+
+            <input type="text" name="password" placeholder="Enter your Password"><br/>             
+            <br> 
+            
+            <input type="mail" name="email" placeholder="Enter your Email">          
+            <br> 
+            <br>  
+        
+            <div class="c2">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">    
+             </div>
+        </form> 
+    </div>
+        
+</body>
+</html>
